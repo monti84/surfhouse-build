@@ -1,0 +1,72 @@
+.flex-container {
+    display: flex;
+}
+
+.flex-inline-container {
+    display: inline-flex;
+}
+
+.flex-dir-column {
+    flex-direction: column;
+}
+
+.flex-col {
+    flex: 0 0 auto;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.flex-shrink {
+    flex-shrink: 1;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
+
+.flex-vcenter {
+    align-items: center;
+}
+
+.flex-vbottom {
+    align-items: flex-end;
+}
+
+.horizontal-scroll {
+    overflow-x: auto;
+}
+
+.no-horizontal-scroll {
+    overflow-x: hidden;
+}
+
+.vertical-scroll {
+    overflow-y: auto;
+}
+
+.no-vertical-scroll {
+    overflow-y: hidden;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.block-center {
+    margin-left: auto;
+    margin-right: auto;
+}
