@@ -38,6 +38,10 @@
     align-items: flex-end;
 }
 
+.flex-hright {
+    justify-content: flex-end;
+}
+
 .horizontal-scroll {
     overflow-x: auto;
 }

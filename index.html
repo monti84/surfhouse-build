@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Roboto:400,700,900i&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400|700|800|Roboto:400,700,900i&amp;subset=latin-ext" rel="stylesheet">
     
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/flex.css">
@@ -15,8 +15,14 @@
   <body>
     <div class="activity-container">
       <select>
+        <option>Used tools/technologies:</option>
+        <option>Sublime text 3</option>
+        <option>Adobe Photoshop CC 2018</option>
+        <option>TortoiseGit</option>
+        <option disabled>---------------</option>
         <option>40 minutes, building index.html</option>
-        <option>22-09-2018 12:45 build index (sick)</option>
+        <option>22-09-2018 12:45-13:45 build index (sick)</option>
+        <option>22-09-2018 18:00 build index (sick)</option>
       </select>
     </div>
 
@@ -33,12 +39,12 @@
                 <li><a><img src="assets/images/icon-pinterest-white.png" width="14" height="16"></a></li>
                 <li><a><img src="assets/images/icon-instagram-white.png" width="16" height="16"></a></li>
                 <li>
-                  <select>
-                    <option>EN</option>
-                    <option>DE</option>
-                    <option>EN</option>
-                    <option>DE</option>
-                  </select>
+                  <ul class="language-selector">
+                    <li class="selected" data-value="en">EN</option>
+                    <li data-value="de">DE</option>
+                    <li data-value="fr">FR</option>
+                    <li data-value="it">IT</option>
+                  </ul>
                 </li>
               </ul>
             </nav>
@@ -46,16 +52,35 @@
         </div>
       </header>
 
-      <section class="top">
-        <sidebar class="flex-col">
+      <section class="top container flex-container">
+        <sidebar class="sidebar flex-col">
           <div class="cart block">
-            <nav class="flex-container">
-              <div class="flex-col half-width text-center"><a>LOG IN</a></div>
-              <div class="flex-col half-width text-center"><a>WISHLIST(0)</a></div>
+            <nav class="top-nav flex-container">
+              <div class="flex-col flex-grow flex-shrink half-width text-center"><a>LOG IN</a></div>
+              <div class="flex-col flex-grow flex-shrink half-width text-center"><a>WISHLIST(0)</a></div>
             </nav>
             
             <div class="cart-info flex-container">
-              
+              <div class="icon flex-col"><img src="assets/images/icon-cart-yellow.png" width="41" height="35"></div>
+              <div class="details flex-col flex-grow flex-shrink">
+                <div class="total">$1.459.50</div>
+                <div class="amount">2 items</div>
+              </div>
+            </div>
+
+            <nav class="bottom-nav">
+              <div class="flex-col flex-grow flex-shrink half-width text-center"><a>VIEW CART</a></div>
+              <div class="flex-col flex-grow flex-shrink half-width text-center"><a>CHECKOUT</a></div>              
+            </nav>
+
+            <div class="search-container flex-container">
+              <div class="input flex-col flex-grow flex-shrink">
+                <input type="search">
+              </div>
+
+              <div class="reset flex-col flex-grow flex-shrink">
+                <button type="reset"><img></button>
+              </div>
             </div>
           </div>
 
@@ -65,13 +90,14 @@
           </div>
         </sidebar>
 
-        <div class="slider flex-container">
-          <div class="slider-content">
-            <h1>JP FUNRIDE 2014</h1>
-            <p>Super easy going freeride boards based on the X-Cite Ride shape concept with additional control and super easy jibing</p>
-            <button type="button">BUY NOW</button>
+        <div class="slider flex-col flex-grow flex-shrink">
+          <div class="flex-container flex-hright">
+            <div class="flex-col slider-content">
+              <h1>JP FUNRIDE 2014</h1>
+              <p>Super easy going freeride boards based on the X-Cite Ride shape concept with additional control and super easy jibing</p>
+              <button type="button">BUY NOW</button>
+            </div>
           </div>
-          
           <div class="slider-control flex-container">
             <div class="flex-col"><a><img src="" width="" height=""></a></div>
             <div class="flex-col"><a><img src="" width="" height=""></a></div>
